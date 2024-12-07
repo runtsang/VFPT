@@ -12,7 +12,7 @@
 
 **2024/12/07:** Our code is publicly available now! Thank you for your attention and patience!
 
-**2024/12/02:** Our official [homepage](https://runjia.tech/vfpt_page/) is available now (slides and video are also included)! Check it out to see more details.
+**2024/12/02:** Our [homepage](https://runjia.tech/vfpt_page/) is available now (slides and video are included)! Check it out to see more details.
 
 **2024/11/14:** Our preliminary key code is now available on GitHub.
 
