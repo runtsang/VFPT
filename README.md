@@ -1,4 +1,4 @@
-![image](imgs\title.png)
+![image](https://github.com/runtsang/VFPT/blob/master/imgs/title.png)
 
 **Official implementation of NeurIPS 2024 "Visual Fourier Prompt Tuning"**
 
@@ -49,7 +49,7 @@ For the heatmap, our code implementation is based on [gradcam](https://github.co
 
 # 📰Poster
 
-![image](imgs\VFPT.png)
+![image](https://github.com/runtsang/VFPT/blob/master/imgs/VFPT.png)
 
 # ❗Thanks
 
