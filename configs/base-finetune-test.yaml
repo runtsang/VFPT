@@ -1,0 +1,26 @@
+NUM_GPUS: 1
+NUM_SHARDS: 1
+OUTPUT_DIR: ""
+RUN_N_TIMES: 1
+MODEL:
+  TRANSFER_TYPE: "end2end"
+  TYPE: "vit"
+  LINEAR:
+    MLP_SIZES: []
+SOLVER:
+  SCHEDULER: "cosine"
+  WARMUP_EPOCH: 1
+  LOSS: "softmax"
+  OPTIMIZER: "adamw"
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0001
+  LOG_EVERY_N: 3
+  TOTAL_EPOCH: 3
+  PATIENCE: 30
+DATA:
+  NAME: ""
+  NUMBER_CLASSES: -1
+  DATAPATH: ""
+  FEATURE: "sup_vitb16_224"
+  BATCH_SIZE: 224 # original batch size is 384
+  NUM_WORKERS: 8
