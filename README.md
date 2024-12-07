@@ -11,14 +11,16 @@
 (👉Under construction! You can currently check command.txt for commands. There are several redundancies in the current version, and the commands/instructions are not perfectly ready for formal release. I will gradually update it! Please stay tuned.)
 
 **2024/12/07:** Our code is publicly available now! Thank you for your attention and patience!
+
 **2024/12/02:** Our official [homepage](https://runjia.tech/vfpt_page/) is available now (slides and video are also included)! Check it out to see more details.
+
 **2024/11/14:** Our preliminary key code is now available on GitHub.
 
 # ⚡CODE TO-GO
 
 If you are just interested in the key implementation in our paper, you can simply take out this part of the code.
 
-### Visual Fourier Prompts
+### 1️⃣Visual Fourier Prompts
 
 
 ![image](https://github.com/user-attachments/assets/bf9d6ee9-ba07-4080-93dc-6414e849164d)
@@ -39,11 +41,11 @@ x = torch.cat((	x[:, :1, :],
 
 Our code implementation is based on [VPT](https://github.com/KMnP/vpt). I have also included part of the ViT VFPT implementation code (originally located at [src/models/vit_prompt/vit_fourier.py](https://github.com/runtsang/VFPT/blob/master/src/models/vit_prompt/vit_fourier.py) in the main root directory [./vit_VFPT.py](https://github.com/runtsang/VFPT/blob/master/vit_VFPT.py) for your convenience.
 
-### Study of the Optimization
+### 2️⃣Study of the Optimization
 
 Our code implementation is based on [loss-landscape](https://github.com/tomgoldstein/loss-landscape).
 
-### Study of the Interpretability
+### 3️⃣Study of the Interpretability
 
 For the heatmap, our code implementation is based on [gradcam](https://github.com/1Konny/gradcam_plus_plus-pytorch). The attention map is simply obtained from the attention layer and visualized using Matplotlib.
 
@@ -183,7 +185,7 @@ See Table 9 in the Appendix for more details about pre-trained backbones.
 </tbody></table>
 
 
-### Examples for training and visualization
+### 🪄Examples for training and visualization
 
 ```bash
 # Training of VFPT
