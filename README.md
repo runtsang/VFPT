@@ -8,7 +8,7 @@
 
 # 📣News
 
-(👉Under construction! You can currently check command.txt for commands. There are several redundancies in the current version, and the commands/instructions are not perfectly ready for formal release. I will gradually update it! Please stay tuned.)
+(👉Under construction! You can currently check [here](https://github.com/runtsang/VFPT/blob/master/README.md#examples-for-training-and-visualization) for commands. There are several redundancies in the current version, and the commands/instructions are not perfectly ready for formal release. I will gradually update it! Please stay tuned.)
 
 **2024/12/07:** Our code is publicly available now! Thank you for your attention and patience!
 
@@ -39,7 +39,7 @@ x = torch.cat((	x[:, :1, :],
                 x[:, 1:, :]), dim=1)
 ```
 
-Our code implementation is based on [VPT](https://github.com/KMnP/vpt). I have also included part of the ViT VFPT implementation code (originally located at [src/models/vit_prompt/vit_fourier.py](https://github.com/runtsang/VFPT/blob/master/src/models/vit_prompt/vit_fourier.py) in the main root directory [./vit_VFPT.py](https://github.com/runtsang/VFPT/blob/master/vit_VFPT.py) for your convenience.
+Our code implementation is based on [VPT](https://github.com/KMnP/vpt) and [E2VPT](https://github.com/ChengHan111/E2VPT). I have also included part of the ViT VFPT implementation code (originally located at [src/models/vit_prompt/vit_fourier.py](https://github.com/runtsang/VFPT/blob/master/src/models/vit_prompt/vit_fourier.py) in the main root directory [./vit_VFPT.py](https://github.com/runtsang/VFPT/blob/master/vit_VFPT.py) for your convenience.
 
 ### 2️⃣Study of the Optimization
 
@@ -55,7 +55,7 @@ For the heatmap, our code implementation is based on [gradcam](https://github.co
 
 # ❗Thanks
 
-The documentation below is copied and modified  from [VPT](https://github.com/KMnP/vpt). Thanks for their effort.
+The documentation below is copied and modified  from [VPT](https://github.com/KMnP/vpt) and [E2VPT](https://github.com/ChengHan111/E2VPT). Thanks for their effort.
 
 ## Environment settings
 
@@ -172,16 +172,6 @@ See Table 9 in the Appendix for more details about pre-trained backbones.
 <td align="center"><a href="https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth">link</a></td>
 <td align="center"><tt>bf9cc1</tt></td>
 </tr>
-<tr><td align="left">ConvNeXt-Base</td>
-<td align="center">Supervised</td>
-<td align="center"><a href="https://dl.fbaipublicfiles.com/convnext/convnext_base_22k_224.pth">link</a></td>
-<td align="center"><tt>-</tt></td>
-</tr>
-<tr><td align="left">ResNet-50</td>
-<td align="center">Supervised</td>
-<td align="center"><a href="https://pytorch.org/vision/stable/models.html">link</a></td>
-<td align="center"><tt>-</tt></td>
-</tr>
 </tbody></table>
 
 
@@ -200,6 +190,7 @@ OUTPUT_DIR "./output/" \
 DATA.BATCH_SIZE "64"
 
 # Landscape Visulization of VFPT
+# Replace {} with the correct args
 python ./ls_plot_surface.py \
 --lr {lr} \
 --wd {wd} \
