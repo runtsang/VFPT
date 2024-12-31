@@ -27,3 +27,4 @@ pip install keras
 # Optional: for slurm jobs
 pip install submitit -U
 pip install slurm_gpustat
+pip install typing_extensions==4.8.0 # fix error: cannot import name 'Buffer' from 'typing_extensions'

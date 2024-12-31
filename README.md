@@ -189,7 +189,7 @@ MODEL.PROMPT_FOURIER.FOURIER_PERCENTAGE "1.0" \
 OUTPUT_DIR "./output/" \
 DATA.BATCH_SIZE "64"
 
-# Landscape Visulization of VFPT
+# Landscape Visualization of VFPT
 # Replace {} with the correct args
 python ./ls_plot_surface.py \
 --lr {lr} \
@@ -205,7 +205,7 @@ MODEL.PROMPT_FOURIER.NUM_TOKENS "{num}" \
 DATA.BATCH_SIZE "{batch_size}" \
 OUTPUT_DIR "{output_dir}"
 
-# GradCam Visulization of VFPT
+# GradCam Visualization of VFPT
 PORT=20000 python \
 tune_vtab_AS.py \
 --train-type "prompt" \
