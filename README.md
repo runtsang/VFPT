@@ -220,7 +220,7 @@ ATTRIBUTION_TYPE "general" \
 ATTRIBUTION_INTEGRATED_METHOD "pytorch_gradcam"
 ```
 
-
+Hyperparameter for VTAB: [here](https://docs.google.com/spreadsheets/d/1ojpqLU9Smf1NZHDGAM0HsWmGdJ1BOKAKxAJc7JQKa6Y/edit?usp=sharing)
 
 
 
